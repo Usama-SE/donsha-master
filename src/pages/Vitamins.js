@@ -6,9 +6,9 @@ import CardSlider from "../components/CardSlider";
 import Options from "../components/Options";
 import ProductCard from "../components/ProductCard";
 import Tagslider from "../components/tagslider";
+import Vitaminsdata from "../data/vitaminsdata";
 
 function Vitamins(props) {
-  let card = [1, 2, 3, 4];
   return (
     <div>
       <Tagslider />
@@ -24,55 +24,11 @@ function Vitamins(props) {
           minHeight: "300px",
         }}
       >
-        {card.map((s) => (
-          <ProductCard />
+        {Vitaminsdata.map((s) => (
+          <ProductCard id={s.id} title={s.title} des={s.category} img={s.image} />
         ))}
       </div>
-      <div
-        style={{
-          width: "80%",
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          marginLeft: "10%",
-          flexWrap: "wrap",
-          minHeight: "300px",
-        }}
-      >
-        {card.map((s) => (
-          <ProductCard />
-        ))}
-      </div>
-      <div
-        style={{
-          width: "80%",
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          marginLeft: "10%",
-          flexWrap: "wrap",
-          minHeight: "300px",
-        }}
-      >
-        {card.map((s) => (
-          <ProductCard />
-        ))}
-      </div>
-      <div
-        style={{
-          width: "80%",
-          display: "flex",
-          justifyContent: "space-evenly",
-          alignItems: "center",
-          marginLeft: "10%",
-          flexWrap: "wrap",
-          minHeight: "300px",
-        }}
-      >
-        {card.map((s) => (
-          <ProductCard />
-        ))}
-      </div>
+      
     </div>
   );
 }

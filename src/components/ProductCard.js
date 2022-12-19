@@ -1,7 +1,8 @@
+import { auto } from "@popperjs/core";
 import React from "react";
 import { BiCart, BiHeart } from "react-icons/bi";
 import "../App.css";
-function ProductCard(props) {
+function ProductCard({id, des, title, img}) {
   return (
     <div className="product-card">
       <div
@@ -12,11 +13,12 @@ function ProductCard(props) {
           Width: "100%",
         }}
       >
-        <img
-          src="/b1.jpg"
+        <img 
+          src={img?img:"/b1.jpg"}
           style={{
-            minHeight: "100%",
-            maxWidth: "100%",
+            
+             minHeight: "100%",
+             maxWidth: "100%",
 
             borderTopWidth: 1,
             borderRadius: 15,
@@ -36,11 +38,10 @@ function ProductCard(props) {
         }}
       >
         <div className="product-title" style={{ fontSize: 14 }}>
-          Product #Sample
+          {title?title:"Product #Sample"}
         </div>
         <div className="product-dis" style={{ fontSize: 12 }}>
-          Product category,niche
-          <br /> sub category,etc
+          {des?des:"Product Description"}
         </div>
         <div className="product-actions">
           <div className="addCartBtn">
