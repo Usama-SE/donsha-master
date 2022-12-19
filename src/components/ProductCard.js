@@ -35,7 +35,7 @@ function ProductCard(props) {
           zIndex: 1,
         }}
       >
-        <div className="product-title" style={{ fontSize: 14}}>
+        <div className="product-title" style={{ fontSize: 14 }}>
           Product #Sample
         </div>
         <div className="product-dis" style={{ fontSize: 12 }}>
@@ -44,7 +44,9 @@ function ProductCard(props) {
         </div>
         <div className="product-actions">
           <div className="addCartBtn">
-            <span><b>Add to cart</b></span>
+            <span>
+              <b>Add to cart</b>
+            </span>
             <span style={{ paddingLeft: 15 }}>
               <BiCart style={{ fontSize: 20 }} />
             </span>

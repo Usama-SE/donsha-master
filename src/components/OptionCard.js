@@ -2,7 +2,6 @@ import React from "react";
 
 function OptionCard({ name, img }) {
   return (
-
     <div
       className="option-card"
       style={{
@@ -11,9 +10,6 @@ function OptionCard({ name, img }) {
         alignItems: "center",
       }}
     >
-
-
-      
       <div className="option-card-img">
         <img
           src={img}
@@ -33,13 +29,7 @@ function OptionCard({ name, img }) {
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
-    
   );
 }
 

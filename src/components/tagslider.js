@@ -3,9 +3,8 @@ import Tags from "./tags";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
 function Tagslider(props) {
-  let cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+  let cards = [1, 2, 3, 4];
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -24,11 +23,14 @@ function Tagslider(props) {
     },
   };
   return (
-    <div style={{
-       marginTop: 80, height: 70, marginLeft: "10%", width:"30%" 
-
-       
-       }}>
+    <div
+      style={{
+        marginTop: 80,
+        height: 70,
+        marginLeft: "10%",
+        width: "30%",
+      }}
+    >
       <Carousel responsive={responsive}>
         {cards.map((c) => (
           <Tags />
