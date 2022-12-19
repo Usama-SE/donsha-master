@@ -38,7 +38,7 @@ function ProductCard(props) {
         <div className="product-title" style={{ fontSize: 14 }}>
           Product #Sample
         </div>
-        <div className="product-dis" style={{ fontSize: 12 }}>
+        <div className="product-dis" id="pd" style={{ fontSize: 12 }}>
           Product category,niche
           <br /> sub category,etc
         </div>

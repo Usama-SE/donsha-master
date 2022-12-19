@@ -15,7 +15,7 @@ function Home(props) {
         style={{
           width: "97%",
           display: "flex",
-          gap: 3,
+          gap: 5,
           alignItems: "center",
           flexWrap: "wrap",
           minHeight: "300px",

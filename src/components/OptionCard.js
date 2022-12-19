@@ -2,21 +2,15 @@ import React from "react";
 
 function OptionCard({ name, img }) {
   return (
-    <div
-      className="option-card"
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
+    <div className="option-card container-fluid">
       <div className="option-card-img">
         <img
           src={img}
-          style={{
-            height: 60,
-            maxWidth: 60,
-          }}
+          // style={{
+          //   maxHeight: 60,
+          //   maxWidth: 60,
+          // }}
+          className="img-fluid"
         ></img>
       </div>
       <div className="option-card-content" style={{ overflow: "hidden" }}>
