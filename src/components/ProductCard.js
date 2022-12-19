@@ -40,8 +40,7 @@ function ProductCard({ id, des, title, img }) {
           {title ? title : "Product #Sample"}
         </div>
         <div className="product-dis" style={{ fontSize: 12 }}>
-          Product category,niche
-          <br /> sub category,etc
+          {des ? des : "Description"}
         </div>
         <div className="product-actions">
           <div className="addCartBtn">
