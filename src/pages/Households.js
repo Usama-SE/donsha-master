@@ -1,20 +1,18 @@
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/header";
-import BannerSlider from "../components/BannerSlider";
-import CardSlider from "../components/CardSlider";
-import Options from "../components/Options";
+// import BannerSlider from "../components/BannerSlider";
+// import CardSlider from "../components/CardSlider";
+// import Options from "../components/Options";
 import ProductCard from "../components/ProductCard";
 import Tagslider from "../components/tagslider";
 
-function Home(props) {
+function Households(props) {
   let card = [1, 2, 3, 4];
   return (
     <div>
-      <Header />
       <Tagslider />
 
-
       <div
         style={{
           width: "80%",
@@ -24,14 +22,10 @@ function Home(props) {
           marginLeft: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
-          
         }}
       >
         {card.map((s) => (
-
-          
           <ProductCard />
-          
         ))}
       </div>
       <div
@@ -43,14 +37,10 @@ function Home(props) {
           marginLeft: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
-          
         }}
       >
         {card.map((s) => (
-
-          
           <ProductCard />
-          
         ))}
       </div>
       <div
@@ -62,14 +52,10 @@ function Home(props) {
           marginLeft: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
-          
         }}
       >
         {card.map((s) => (
-
-          
           <ProductCard />
-          
         ))}
       </div>
       <div
@@ -81,19 +67,14 @@ function Home(props) {
           marginLeft: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
-          
         }}
       >
         {card.map((s) => (
-
-          
           <ProductCard />
-          
         ))}
       </div>
-      <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Households;

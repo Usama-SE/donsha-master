@@ -1,13 +1,18 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 function Header(props) {
   return (
     <>
       <div className="topheader">
         <div className="topheaderbtn">
-          <a className="">About</a>
+          <Link to={"/about"} className="">
+            About
+          </Link>
           <a className="">Contact</a>
-          <a className="">Privacy Policy</a>
+          <Link to="/privacy" className="">
+            Privacy Policy
+          </Link>
         </div>
         {/* <div className=""></div> */}
         <div className="innertopheadericon">
@@ -24,7 +29,11 @@ function Header(props) {
       </div>
 
       <div className="topheader2">
-        <div className="topheadertitle"><h3>donsha.net</h3></div>
+        <div className="topheadertitle">
+          <Link to={"/"}>
+            <h3>donsha.net</h3>
+          </Link>
+        </div>
 
         <div className="topheaderlink">
           <div href="/" className="search">

@@ -13,21 +13,24 @@ function CardSlider(props) {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 2,
       slidesToSlide: 2, // optional, default to 1.
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
       slidesToSlide: 1, // optional, default to 1.
     },
   };
   return (
-    <div style={{
-       marginTop: 80, height: 400, marginLeft: 150, width:"85%" 
-
-       
-       }}>
+    <div
+      style={{
+        marginTop: 80,
+        height: 400,
+        width: "97%",
+        marginLeft: "3%",
+      }}
+    >
       <Carousel responsive={responsive}>
         {cards.map((c) => (
           <ProductCard />
