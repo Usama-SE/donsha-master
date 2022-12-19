@@ -11,7 +11,6 @@ import Medicinal from "../data/medicinal";
 function Medical(props) {
   return (
     <div>
-      <Tagslider />
 
       <div
         style={{
@@ -20,8 +19,10 @@ function Medical(props) {
           justifyContent: "space-evenly",
           alignItems: "center",
           marginLeft: "10%",
+          marginRight: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
+          marginTop: "100px",
         }}
       >
         {Medicinal.map((s) => (

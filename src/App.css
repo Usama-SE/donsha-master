@@ -161,13 +161,14 @@ transition: all .2s ease-in;
 }
 
 .topheader2{
-  background-color: aliceblue;
+   background-color: white; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-top:15px;
   padding-bottom:15px;
+  box-shadow: 0px 1px 10px grey;
 }
 
 .topheadertitle{
@@ -239,7 +240,7 @@ border-radius: 5rem;
 /* #endregion */
 
 .optionCards{
-  max-width: 100%;
+  width: 80%;
   position: relative;
   top:0;
   display: flex;

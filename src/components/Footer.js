@@ -11,7 +11,7 @@ function Footer(props) {
         <div className="col-md-1 col-lg-1"></div>
         <div className="col-12 col-sm-12 col-md-2 col-lg-2">
           <h3>
-            <Link to="/" style={{ color: "white" }}>
+            <Link to="/" style={{ color: "white" }} className="Link">
               <b>donsha.net</b>
             </Link>
           </h3>
@@ -43,7 +43,7 @@ function Footer(props) {
               About Us
             </Link>
             <br />
-            <Link to={"/tc"} className="text-white-50 Link">
+            <Link to={"/terms&conditions"} className="text-white-50 Link">
               Terms & Conditions
             </Link>
             <br />
