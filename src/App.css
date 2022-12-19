@@ -210,6 +210,25 @@ border-radius: 5rem;
   color:white;
 } 
 
+.search:hover{
+  background-color: blue;
+  color:white;
+  cursor:pointer;
+}
+.login:hover{
+  background-color: blue;
+  color:white;
+  cursor:pointer;
+
+}
+
+.signup:hover{
+  background-color: blue;
+  color:white;
+  cursor:pointer;
+
+}
+
 .border{
   border-radius: 10px;
 }
@@ -245,9 +264,10 @@ border-radius: 5rem;
   border-color:black;
   height: 40px;
  border-radius: 5rem;
- padding:10px;
- margin-left:10px;
- margin-right:10px;
+ margin-right: 10px;
+ /* padding:10px; */
+ /* margin-left:10px; */
+ /* margin-right:10px; */
 
 }
 

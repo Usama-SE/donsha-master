@@ -25,10 +25,14 @@ function Households(props) {
         }}
       >
         {Householddata.map((s) => (
-          <ProductCard id={s.id} title={s.title} des={s.category} img={s.image} />
+          <ProductCard
+            id={s.id}
+            title={s.title}
+            categ={s.category}
+            img={s.image}
+          />
         ))}
       </div>
-      
     </div>
   );
 }

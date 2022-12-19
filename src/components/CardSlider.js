@@ -3,8 +3,8 @@ import ProductCard from "./ProductCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-function CardSlider(props) {
-  let cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+function CardSlider({ data }) {
+  // let cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -31,9 +31,22 @@ function CardSlider(props) {
         marginLeft: "3%",
       }}
     >
-      <Carousel responsive={responsive}>
-        {cards.map((c) => (
-          <ProductCard />
+      <Carousel
+        responsive={responsive}
+        autoPlay
+        infinite
+        // autoPlaySpeed={300}
+        keyBoardControl={true}
+        customTransition="all 5s ease"
+        transitionDuration={100}
+      >
+        {data.map((s) => (
+          <ProductCard
+            id={s.id}
+            title={s.title}
+            img={s.image}
+            categ={s.category}
+          />
         ))}
       </Carousel>
     </div>

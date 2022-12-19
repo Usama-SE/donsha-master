@@ -20,15 +20,20 @@ function Vitamins(props) {
           justifyContent: "space-evenly",
           alignItems: "center",
           marginLeft: "10%",
+          marginTop: 10,
           flexWrap: "wrap",
           minHeight: "300px",
         }}
       >
         {Vitaminsdata.map((s) => (
-          <ProductCard id={s.id} title={s.title} des={s.category} img={s.image} />
+          <ProductCard
+            id={s.id}
+            title={s.title}
+            categ={s.category}
+            img={s.image}
+          />
         ))}
       </div>
-      
     </div>
   );
 }

@@ -3,27 +3,83 @@ import BannerSlider from "../components/BannerSlider";
 import CardSlider from "../components/CardSlider";
 import Options from "../components/Options";
 import ProductCard from "../components/ProductCard";
-
+import Householddata from "../data/householddata";
+import Medicinal from "../data/medicinal";
+import Vitaminsdata from "../data/vitaminsdata";
 function Home(props) {
-  let card = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+  let hh = Householddata.slice(0, 4);
+  let md = Medicinal.slice(0, 4);
+  let vt = Medicinal.slice(0, 4);
+  let sliderData = [...hh, ...md, ...vt];
   return (
     <div>
       <BannerSlider />
       <Options />
-      <CardSlider />
+      <CardSlider data={sliderData} />
       <div
         style={{
-          width: "97%",
+          width: "95%",
           display: "flex",
-          gap: 5,
+          justifyContent: "space-evenly",
           alignItems: "center",
+          marginLeft: "2.5%",
+          marginRight: "2.5%",
           flexWrap: "wrap",
           minHeight: "300px",
-          marginLeft: "3%",
+          gap: 10,
         }}
       >
-        {card.map((s) => (
-          <ProductCard />
+        {Householddata.slice(0, 4).map((s) => (
+          <ProductCard
+            id={s.id}
+            title={s.title}
+            img={s.image}
+            categ={s.category}
+          />
+        ))}
+      </div>
+      <div
+        style={{
+          width: "95%",
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          marginLeft: "2.5%",
+          marginRight: "2.5%",
+          flexWrap: "wrap",
+          minHeight: "300px",
+          gap: 10,
+        }}
+      >
+        {Medicinal.slice(0, 4).map((s) => (
+          <ProductCard
+            id={s.id}
+            title={s.title}
+            img={s.image}
+            categ={s.category}
+          />
+        ))}
+      </div>
+      <div
+        style={{
+          width: "95%",
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          marginLeft: "2.5%",
+          marginRight: "2.5%",
+          flexWrap: "wrap",
+          minHeight: "300px",
+          gap: 10,
+        }}
+      >
+        {Vitaminsdata.slice(0, 4).map((s) => (
+          <ProductCard
+            id={s.id}
+            title={s.title}
+            img={s.image}
+            categ={s.category}
+          />
         ))}
       </div>
     </div>

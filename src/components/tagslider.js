@@ -2,9 +2,10 @@ import React from "react";
 import Tags from "./tags";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Button from "react-bootstrap/Button";
 
 function Tagslider(props) {
-  let cards = [1, 2, 3, 4];
+  let cards = ["Kitchen", "Bedroom", "Bathroom"];
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -28,12 +29,16 @@ function Tagslider(props) {
         marginTop: 80,
         height: 70,
         marginLeft: "10%",
-        width: "30%",
+        width: "35%",
       }}
     >
       <Carousel responsive={responsive}>
         {cards.map((c) => (
-          <Tags />
+          <Button
+            style={{ borderRadius: 25, background: "none", color: "black" }}
+          >
+            {c}
+          </Button>
         ))}
       </Carousel>
     </div>

@@ -1,17 +1,21 @@
 import React from "react";
-
-function OptionCard({ name, img }) {
+import { Link } from "react-router-dom";
+function OptionCard({ name, img, to }) {
   return (
     <div className="option-card container-fluid">
       <div className="option-card-img">
-        <img
+        {/* <img
           src={img}
           // style={{
           //   maxHeight: 60,
           //   maxWidth: 60,
           // }}
           className="img-fluid"
-        ></img>
+        ></img> */}
+        <i
+          class={img ? img : "fa-solid fa-stethoscope"}
+          style={{ fontSize: "3rem", color: "blue" }}
+        ></i>
       </div>
       <div className="option-card-content" style={{ overflow: "hidden" }}>
         <div className="option-card-body">

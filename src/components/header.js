@@ -4,15 +4,36 @@ import { Link } from "react-router-dom";
 import ContactModal from "./ContactModal";
 import SignIn from "./SignInModal";
 import SignUp from "./SignUp";
-import { UncontrolledPopover, PopoverBody, PopoverHeader } from "reactstrap";
+import {
+  UncontrolledPopover,
+  PopoverBody,
+  PopoverHeader,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText,
+} from "reactstrap";
+import Navbar2 from "./Navbar2";
+import DataContext from "../data/dataContext";
+import Householddata from "../data/householddata";
 
 function Header(props) {
-  // const [visible, setvisibe] = useState(false);
+  // const data = React.useContext(DataContext);
   const [modal, setModal] = useState(false);
 
   const [isSignin, setSignin] = useState(false);
   const [isSignUp, setSignUP] = useState(false);
+  const [isnavOpen, setIsnavOpen] = useState(false);
 
+  const togglenav = () => setIsnavOpen(!isnavOpen);
   const toggle = () => setModal(!modal);
   const toggleSignIn = () => setSignin(!isSignin);
   const toggleSignUp = () => setSignUP(!isSignUp);
@@ -39,8 +60,9 @@ function Header(props) {
               <UncontrolledPopover placement="bottom" target="shop">
                 <PopoverHeader>Shopping Cart</PopoverHeader>
                 <PopoverBody>
-                  Sed posuere consectetur est at lobortis. Aenean eu leo quam.
-                  Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                  {props.cart.map((x) => (
+                    <div>{x}</div>
+                  ))}
                 </PopoverBody>
               </UncontrolledPopover>
             </div>
@@ -52,8 +74,9 @@ function Header(props) {
               <UncontrolledPopover placement="bottom" target="wishlist">
                 <PopoverHeader>WishList</PopoverHeader>
                 <PopoverBody>
-                  Sed posuere consectetur est at lobortis. Aenean eu leo quam.
-                  Pellentesque ornare sem lacinia quam venenatis vestibulum.
+                  {props.cart.map((x) => (
+                    <div>{x}</div>
+                  ))}
                 </PopoverBody>
               </UncontrolledPopover>
             </div>
@@ -72,19 +95,23 @@ function Header(props) {
         </div>
 
         <div className="topheaderlink">
-          <div href="/" className="search">
+          <div className="search">
             Search
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i
+              className="fa-solid fa-magnifying-glass"
+              style={{ paddingLeft: 5 }}
+            ></i>
           </div>
 
-          <Button className="login" onClick={toggleSignIn}>
-            <b>Log in</b>
-          </Button>
-          <Button className="signup" onClick={toggleSignUp}>
+          <div className="login" onClick={toggleSignIn}>
+            Log in
+          </div>
+          <div className="signup" onClick={toggleSignUp}>
             Sign Up
-          </Button>
+          </div>
         </div>
       </div>
+      {/* <Navbar2 isOpen={isnavOpen} toggle={togglenav} /> */}
       <ContactModal modal={modal} toggle={toggle} />
       <SignIn modal={isSignin} toggle={toggleSignIn} />
       <SignUp modal={isSignUp} toggle={toggleSignUp} />

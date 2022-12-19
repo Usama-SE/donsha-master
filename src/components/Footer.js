@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer(props) {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{ marginTop: 100 }}>
       <div
         className="row bg-dark text-light"
         style={{ paddingTop: 30, paddingBottom: 30, textAlign: "center" }}
@@ -11,21 +11,27 @@ function Footer(props) {
         <div className="col-md-1 col-lg-1"></div>
         <div className="col-12 col-sm-12 col-md-2 col-lg-2">
           <h3>
-            <Link to="/">
+            <Link to="/" style={{ color: "white" }}>
               <b>donsha.net</b>
             </Link>
           </h3>
           <br />
           <p className="text-white-50">
-            <Link to={"/household"}>Household</Link>
+            <Link to={"/household"} className="text-white-50 Link">
+              Household
+            </Link>
             <br />
             Kitchen
             <br />
             Bedroom
             <br />
-            <Link to={"/medical"}>Medical Professional</Link>
+            <Link to={"/medical"} className="text-white-50 Link">
+              Medical Professional
+            </Link>
             <br />
-            <Link to={"/vitamin"}>Vitamin Supplements</Link>
+            <Link to={"/vitamin"} className="text-white-50 Link">
+              Vitamin Supplements
+            </Link>
           </p>
         </div>
         <div className="col-12 col-sm-12 col-md-2 col-lg-2">
@@ -33,13 +39,18 @@ function Footer(props) {
           <br />
           <br />
           <p className="text-white-50">
-            About Us
+            <Link to={"/about"} className="text-white-50 Link">
+              About Us
+            </Link>
             <br />
-            Contact Us
+            <Link to={"/tc"} className="text-white-50 Link">
+              Terms & Conditions
+            </Link>
             <br />
-            Terms & Conditions
-            <br />
-            Privacy Policy
+            <Link to={"/privacy"} className="text-white-50 Link">
+              {" "}
+              Privacy Policy
+            </Link>
           </p>
         </div>
         <div className="col-12 col-sm-12 col-md-3 col-lg-3">
