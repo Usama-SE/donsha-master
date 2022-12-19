@@ -1,0 +1,256 @@
+body{
+  background-color: white;
+}
+/* #region option-card */
+.option-card{
+  width:25%;
+height: 140px;
+/* background: #FFFFFF 0% 0% no-repeat padding-box;
+ */
+box-shadow: 3px 3px 10px #0000001A;
+border-radius: 23px;
+opacity: 1;
+background-color: white;
+
+}
+.option-card-img{
+    width: "25%";
+    display: "flex";
+    justify-content: "center";
+    align-items: "center";
+    flex:0.3;
+    text-align: center;
+}
+.option-card-content{
+  flex: 0.55;
+}
+.option-card-body{
+  transition: all 1s ease;
+}
+.option-card-title{
+  font-size: 2.8vmin;
+  font-weight: bold;
+  color:#0A0A0A;
+}
+.option-card-txt{
+  font-size: 1vmin;
+}
+.option-card-txt,.option-card-line{
+  /* display: none; */
+  transition: 1s ease all;
+}
+/* .option-card:hover .option-card-txt {
+  transition: .3s ease all;
+  display: block;
+  border:none;
+  border-bottom: 1px solid blue;
+  padding-bottom: 10px;
+  font-size: 10px;
+}
+.option-card:hover .option-card-line {
+  display: block;
+  transition: 1s ease all;
+}
+.option-card:hover .option-card-title{
+  transition: .2s ease all;
+ font-size: 16px;
+
+} */
+
+/* #endregion */
+
+/* #region product-card */
+.product-card{
+max-width: 100%;
+min-height: 260px;
+max-height: 400px;
+display: flex;
+flex:1;
+flex-direction: column;
+padding: 10px;
+z-index: 1;
+position: relative;
+}
+
+
+
+.product-title{
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.prdouct-dis{
+  font-size: 12px;
+  display: none;
+}
+.product-actions div{
+  border:1px solid black;
+  border-radius: 25px;
+  height: 25px;
+  width:80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+font-size: 14px;
+color:#0A0A0A;
+
+}
+.product-actions div:hover{
+  background-color: #0A0A0A;
+  color:white;
+  cursor: pointer;
+}
+
+.product-actions{
+  width: 250px;
+  display: flex;
+  padding: 17px;
+  /* justify-content: space-evenly; */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 5px;
+}
+.product-card:hover .product-dis{
+display: block !important;
+}
+
+
+
+
+/* #endregion */
+
+/* #region header */
+.topheader{
+  width:"100%";
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.topheaderbtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topheaderbtn a{
+  text-decoration: none;
+  color:white;
+  padding-left: 10px;
+  font-size: 0.5rem;
+}
+.topheaderbtn a:hover{
+  color:white;
+  cursor: pointer;
+}
+.innertopheadericon a{
+  padding-right: 10px;
+  color: white;
+}
+
+.topheader2{
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.topheadertitle{
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+.topheaderlink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.login,.signup,.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  height: 40px;
+  width: 100px;
+border-radius: 5rem;
+}
+.login{
+  background: none;
+  color:blue;
+  border-color: white;
+}
+
+.signup{
+  background-color: #0A0A0A;
+  color:white;
+  margin-right: 30px;
+}
+
+.search{
+  background-color: #0A0A0A;
+  color:white;
+} 
+
+.border{
+  border-radius: 10px;
+}
+.borderbtn{
+  border-radius: 5rem;
+  margin-left: 10px;
+}
+/* #endregion */
+
+.optionCards{
+  max-width: 100%;
+  position: relative;
+  top:0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -50px;
+  z-index: 1;
+  margin-bottom: -10px;
+
+}
+
+.tagsbtn{
+
+  background: none;
+  color:black;
+  border-color:black;
+  height: 40px;
+ border-radius: 5rem;
+ padding:10px;
+ margin-left:10px;
+ margin-right:10px;
+
+}
+
+
+/* <div className="product-card">
+<div className="prodcut-img">
+  <img />
+</div>
+<div className="product-title">Product #Sample</div>
+<div className="product-dis">
+  Product category,niche
+  <br /> sub category,etc
+</div>
+<div className="product-actions">
+  <div className="addCartBtn">
+    <span>Add to cart</span>
+    <span>
+      <BiCart style={{ fontSize: 17, color: "blue" }} />
+    </span>
+  </div>
+  <span>
+    <BiHeart style={{ fontSize: 17, color: "blue" }} />
+  </span>
+</div>
+</div> */
