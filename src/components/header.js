@@ -87,8 +87,12 @@ function Header(props) {
           </a>
         </div>
       </div>
+     
+     
 
-      <div className="topheader2">
+
+
+       <div className="topheader2">
         <div className="topheadertitle">
           <Link to={"/"} className="Link">
             <h3>donsha.net</h3>
@@ -121,7 +125,8 @@ function Header(props) {
             Sign Up
           </div>
         </div>
-      </div>
+        
+      </div>  
       {/* <Navbar2 isOpen={isnavOpen} toggle={togglenav} /> */}
       <ContactModal modal={modal} toggle={toggle} />
       <SignIn modal={isSignin} toggle={toggleSignIn} />

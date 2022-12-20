@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 function Terms() {
   return (
     <div>
-      <Header />
+     
 
       <div className="container-fluid">
         <div
@@ -54,7 +54,7 @@ function Terms() {
         </div>
       </div>
 
-      <Footer />
+     
     </div>
   );
 }

@@ -11,7 +11,7 @@ import Vitaminsdata from "../data/vitaminsdata";
 function Vitamins(props) {
   return (
     <div>
-      <Tagslider />
+    
 
       <div
         style={{
@@ -20,7 +20,8 @@ function Vitamins(props) {
           justifyContent: "space-evenly",
           alignItems: "center",
           marginLeft: "10%",
-          marginTop: 10,
+          marginRight:"10%",
+          marginTop:"100px",
           flexWrap: "wrap",
           minHeight: "300px",
         }}

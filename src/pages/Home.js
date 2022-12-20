@@ -18,12 +18,12 @@ function Home(props) {
       <CardSlider data={sliderData} />
       <div
         style={{
-          width: "95%",
+          width: "80%",
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          marginLeft: "2.5%",
-          marginRight: "2.5%",
+          marginLeft: "10%",
+          marginRight: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
           gap: 10,
@@ -40,12 +40,12 @@ function Home(props) {
       </div>
       <div
         style={{
-          width: "95%",
+          width: "80%",
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          marginLeft: "2.5%",
-          marginRight: "2.5%",
+          marginLeft: "10%",
+          marginRight: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
           gap: 10,
@@ -62,15 +62,16 @@ function Home(props) {
       </div>
       <div
         style={{
-          width: "95%",
+          width: "80%",
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          marginLeft: "2.5%",
-          marginRight: "2.5%",
+          marginLeft: "10%",
+          marginRight: "10%",
           flexWrap: "wrap",
           minHeight: "300px",
           gap: 10,
+          
         }}
       >
         {Vitaminsdata.slice(0, 4).map((s) => (
