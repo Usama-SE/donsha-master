@@ -15,8 +15,11 @@ function ProductCard({ id, categ, title, img }) {
     let p = data.wishlist;
     data.setwishlist([...p, title]);
   };
+  const handlenav = () => {
+    window.location.assign(`/pd/${id}`);
+  };
   return (
-    <div className="product-card container-fluid">
+    <div className="product-card container-fluid" onClick={handlenav}>
       <div
         style={{
           borderTopWidth: 1,

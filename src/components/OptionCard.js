@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function OptionCard({ name, img, to }) {
+  const handlenav = () => {
+    window.location.replace(to);
+  };
   return (
-    <div className="option-card container-fluid">
+    <div className="option-card container-fluid" onClick={handlenav}>
       <div className="option-card-img">
         {/* <img
           src={img}

@@ -33,6 +33,7 @@ function App() {
             <Route path="/medical" exact component={Medical} />
             <Route path="/privacy" exact component={Privacypolicy} />
             <Route path="/tc" exact component={Terms} />
+            <Route path="/pd/:id" exact component={Productdescription} />
             <Route path="/about" exact component={About} />
           </Switch>
         </div>

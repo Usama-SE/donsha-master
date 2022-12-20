@@ -32,6 +32,7 @@ function Header(props) {
   const [isSignin, setSignin] = useState(false);
   const [isSignUp, setSignUP] = useState(false);
   const [isnavOpen, setIsnavOpen] = useState(false);
+  const [t, sett] = useState(false);
 
   const togglenav = () => setIsnavOpen(!isnavOpen);
   const toggle = () => setModal(!modal);
@@ -95,11 +96,21 @@ function Header(props) {
         </div>
 
         <div className="topheaderlink">
-          <div className="search">
-            Search
+          <div className="search" id="search">
+            {t ? <input type="text" placeholder="Search" id="sr" /> : null}
             <i
               className="fa-solid fa-magnifying-glass"
-              style={{ paddingLeft: 5 }}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                borderRadius: 15,
+                height: 30,
+                width: 30,
+                background: "black",
+                color: "white",
+              }}
+              onClick={() => sett(!t)}
             ></i>
           </div>
 
