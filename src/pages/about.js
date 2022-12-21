@@ -10,7 +10,12 @@ function About() {
             padding: 30,
           }}
         >
-          <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6"
+          style={{
+            alignContent:"center",
+            justifyContent:"center",
+          }}
+          >
             <br />
             <br />
             <h2>About</h2>
@@ -18,33 +23,20 @@ function About() {
             <br />
             <br />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              malesuada tellus enim, id tempus dui lacinia sit amet. Suspendisse
-              nec semper mauris. Maecenas feugiat volutpat suscipit. Integer sed
-              nibh tristique, dapibus leo eget, malesuada nibh. Fusce feugiat a
-              tortor facilisis elementum. Integer vitae mauris metus. Nullam sed
-              orci non lectus placerat dapibus. Pellentesque habitant morbi
-              tristique senectus et netus et malesuada fames ac turpis egestas.
-              Quisque sit amet nulla mi. Etiam sed lectus ac risus dignissim
-              consectetur id in est. Curabitur pretium urna non ante blandit
-              vehicula. Integer euismod lobortis ante nec porta. Etiam eu
-              venenatis dui, nec tristique magna. Fusce eleifend, elit ac
-              venenatis facilisis, nibh massa pellentesque nisi, non volutpat
-              quam ligula et arcu. Aliquam ultricies augue sit amet placerat
-              vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus
-              et ultrices posuere cubilia curae; Nulla ut leo a ex tristique
-              semper eu vel orci. Aliquam justo risus, elementum ut odio id,
-              fermentum hendrerit nisi.
+            Donsha is a wholesale goods company based in Trinidad. We provide you with the best quality goods at wholesale prices so you can sell them to your clients, customers or even yourself! Whether you're a business looking for new products or a person who needs household items or medical supplies, we have it all and have been providing wholesale items in Trinidad for years.
+            <br /><br /><br />
+            We're here to help your business thrive by providing high-quality products at affordable prices, so you can rest assured knowing that your customers will be happy with the quality of your merchandise.
+            <br /><br /><br />
+            We offer great prices on all of our products—no matter what kind of product you're looking for—so you can start up your own business or buy for your existing one without breaking the bank.
             </p>
           </div>
 
-          <div className="col-12 col-sm-12 col-md-6 col-lg-6">
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center align-items-center">
             <img
+            className="img-fluid imgbg"
               src="/about.png"
               alt="Not Found"
-              style={{
-                padding: 130,
-              }}
+             
             ></img>
           </div>
         </div>

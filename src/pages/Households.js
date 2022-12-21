@@ -5,13 +5,12 @@ import Header from "../components/header";
 // import CardSlider from "../components/CardSlider";
 // import Options from "../components/Options";
 import ProductCard from "../components/ProductCard";
-import Tagslider from "../components/tagslider";
 import Householddata from "../data/householddata";
 
 function Households(props) {
   return (
     <div>
-      <Tagslider />
+    
 
       <div
         style={{
@@ -20,8 +19,12 @@ function Households(props) {
           justifyContent: "space-evenly",
           alignItems: "center",
           marginLeft: "10%",
+          marginRight:"10%",
           flexWrap: "wrap",
           minHeight: "300px",
+          marginTop: "100px",
+
+         
         }}
       >
         {Householddata.map((s) => (

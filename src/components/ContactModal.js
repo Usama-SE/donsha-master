@@ -17,7 +17,7 @@ function ContactModal(args) {
         <ModalHeader toggle={args.toggle}>Contact Us</ModalHeader>
         <ModalBody style={{ display: "flex" }}>
           <div
-            className=""
+            className="cssc"
             style={{
               height: 300,
               flex: 0.7,
@@ -77,7 +77,7 @@ function ContactModal(args) {
             </div>
           </div>
           <div
-            className="container-fluid"
+            className="container-fluid cs"
             id="contactImage"
             style={{
               flex: 0.3,

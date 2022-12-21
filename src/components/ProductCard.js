@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { BiCart, BiHeart } from "react-icons/bi";
 import "../App.css";
 import DataContext from "../data/dataContext";
+import { Link } from "react-router-dom";
+
 function ProductCard({ id, categ, title, img }) {
   const data = React.useContext(DataContext);
   const [c, setc] = useState(false);
@@ -19,7 +21,7 @@ function ProductCard({ id, categ, title, img }) {
     window.location.assign(`/pd/${id}`);
   };
   return (
-    <div className="product-card container-fluid" onClick={handlenav}>
+    <div className="product-card container-fluid">
       <div
         style={{
           borderTopWidth: 1,
@@ -29,9 +31,16 @@ function ProductCard({ id, categ, title, img }) {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+          
         }}
         className="img-fluid"
       >
+        <Link to={`/pd/${id}`} className="Link1"
+        style={{
+          height: 250,
+          Width: "100%",
+        }}
+        >
         <img
           src={img ? img : "/b1.jpg"}
           style={{
@@ -43,6 +52,8 @@ function ProductCard({ id, categ, title, img }) {
           }}
           className="img-fluid"
         />
+          </Link>
+      
       </div>
       <div
         style={{
@@ -54,14 +65,18 @@ function ProductCard({ id, categ, title, img }) {
           borderBottomRightRadius: 15,
           minHeight: 50,
           zIndex: 1,
+          
         }}
       >
-        <div className="product-title" style={{ fontSize: 14 }}>
+         <Link to={`/pd/${id}`} className="Link1">
+         <div className="product-title" style={{ fontSize: 14 }}>
           {title ? title : "Product #Sample"}
         </div>
         <div className="product-dis" style={{ fontSize: 12 }} id="pd">
           {categ ? categ : "Description"}
         </div>
+          </Link>
+        
         <div className="product-actions">
           <div
             className="addCartBtn"

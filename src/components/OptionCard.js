@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 function OptionCard({ name, img, to }) {
-  const handlenav = () => {
-    window.location.replace(to);
-  };
+  function handleclick(){window.location.assign(to)}
   return (
-    <div className="option-card container-fluid" onClick={handlenav}>
+    
+    
+    <div className="option-card container-fluid">
+      
+      
       <div className="option-card-img">
         {/* <img
           src={img}
@@ -15,19 +17,29 @@ function OptionCard({ name, img, to }) {
           // }}
           className="img-fluid"
         ></img> */}
+        <Link to={to} className="Link1">
         <i
           class={img ? img : "fa-solid fa-stethoscope"}
           style={{ fontSize: "3rem", color: "blue" }}
         ></i>
+        </Link>
+        
       </div>
       <div className="option-card-content" style={{ overflow: "hidden" }}>
         <div className="option-card-body">
-          <div className="option-card-title">{name}</div>
+        <Link to={to} className="Link">
+        <div className="option-card-title">{name}</div>
+
+          </Link>
+
+          <Link to={to} className="Link1">
           <div className="option-card-txt">
-            Household,Kitchen,Bedroom,
+          Household,Kitchen,Bedroom,
             <br />
             Cleaning,Washing,Lifestyle
           </div>
+        </Link>
+            
         </div>
       </div>
     </div>

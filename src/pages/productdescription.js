@@ -39,13 +39,13 @@ function Productdescription({ match }) {
   return (
     <div>
       <div className="container-fluid">
-        <div className="row" style={{ marginright: 20 }}>
+        <div className="row" style={{ marginTop: 100 }}>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
             <div className="row" style={{ height: 500 }}>
               <div className="col-1 col-sm-1 col-md-1 col-lg-1"></div>
               <div
                 className="col-11 col-sm-11 col-md-11 col-lg-11 border-none"
-                style={{ maxHeight: "100%" }}
+                style={{ maxHeight: "100%", display:"flex", justifyContent:"center", alignItems:"center" }}
               >
                 <img
                   src={cur.image}
@@ -56,7 +56,8 @@ function Productdescription({ match }) {
               </div>
             </div>
             <div className="row" style={{ padding: 30 }}>
-              <div className="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+            <div className="col-1 col-sm-1 col-md-1 col-lg-1"></div>
+
               <div
                 className="col-3 col-sm-3 col-md-3 col-lg-3 border-none"
                 style={{ height: 150 }}
@@ -143,7 +144,7 @@ function Productdescription({ match }) {
                 value={qval}
                 id="qi"
                 min={0}
-                style={{ width: 40, textAlign: "center" }}
+                style={{ width: 40, textAlign: "center", }}
               />
               <button
                 onClick={() => {
@@ -167,8 +168,8 @@ function Productdescription({ match }) {
                 Add to cart <BiCart style={{ fontSize: 20, marginleft: 8 }} />
               </button>
               <button
-                className="bg-primary text-light borderbtn"
-                style={{ border: 2, height: 50, width: 150 }}
+                className="text-light borderbtn"
+                style={{ border: 2, height: 50, width: 150, backgroundColor:"#0000ff ",  }}
               >
                 Proceed to Buy
               </button>
@@ -178,12 +179,13 @@ function Productdescription({ match }) {
       </div>
       <div
         style={{
-          width: "95%",
+          width: "80%",
           display: "flex",
           justifyContent: "space-evenly",
           alignItems: "center",
-          marginLeft: "2.5%",
-          marginRight: "2.5%",
+          marginLeft: "10%",
+          marginRight: "10%",
+          marginTop:"50px",
           flexWrap: "wrap",
           minHeight: "300px",
           gap: 10,

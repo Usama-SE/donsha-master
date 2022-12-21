@@ -95,7 +95,14 @@ function Header(props) {
        <div className="topheader2">
         <div className="topheadertitle">
           <Link to={"/"} className="Link">
-            <h3>donsha.net</h3>
+            
+            <h3><b>Donsha<sup
+            style={{
+              fontSize:12,
+              verticalAlign:"super",
+            }}
+            >
+              LLC</sup></b></h3>
           </Link>
         </div>
 

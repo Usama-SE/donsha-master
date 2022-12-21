@@ -6,13 +6,18 @@ function Footer(props) {
     <div className="container-fluid" style={{ marginTop: 100 }}>
       <div
         className="row bg-dark text-light"
-        style={{ paddingTop: 30, paddingBottom: 30, textAlign: "center" }}
+        style={{ paddingTop: 30, paddingBottom: 30, textAlign: "center" ,}}
       >
-        <div className="col-md-1 col-lg-1"></div>
-        <div className="col-12 col-sm-12 col-md-2 col-lg-2">
+        <div className="col-12 col-sm-12 col-md-3 col-lg-3">
           <h3>
             <Link to="/" style={{ color: "white" }} className="Link">
-              <b>donsha.net</b>
+            <h3><b>Donsha<sup
+            style={{
+              fontSize:12,
+              verticalAlign:"super",
+            }}
+            >
+              LLC</sup></b></h3>
             </Link>
           </h3>
           <br />
@@ -34,7 +39,7 @@ function Footer(props) {
             </Link>
           </p>
         </div>
-        <div className="col-12 col-sm-12 col-md-2 col-lg-2">
+        <div className="col-12 col-sm-12 col-md-3 col-lg-3">
           <br />
           <br />
           <br />
@@ -58,27 +63,17 @@ function Footer(props) {
           <br />
           <br />
           <p className="text-white-50">
-            Address:example#
+            <b>Address:</b><br />7901 4TH ST N | STE 300<br />ST. PETERSBURG, FL. US 33702
             <br />
-            Email:example@abc.com
+            <b>Email:</b> admin@donsha.net
             <br />
-            Tel:1233444
+            <b>Tell:</b> 8684681868
             <br />
-            Port of Spain
-            <br />
-            Trinidad
+            Port of Spain | Trinidad
           </p>
         </div>
-        <div className="col-12 col-sm-12 col-md-4 col-lg-4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d254489.0677097334!2d-61.284226120022566!3d10.438735886572161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sTrinidad!5e0!3m2!1sen!2s!4v1671344760256!5m2!1sen!2s"
-            width={320}
-            height={240}
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="col-12 col-sm-12 col-md-3 col-lg-3">
+          
         </div>
       </div>
       <div

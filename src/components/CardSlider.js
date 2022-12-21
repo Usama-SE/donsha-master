@@ -34,8 +34,8 @@ function CardSlider({ data }) {
       <Carousel
         responsive={responsive}
         autoPlay
+        autoPlaySpeed={8000}
         infinite
-        // autoPlaySpeed={300}
         keyBoardControl={true}
         customTransition="all 5s ease"
         transitionDuration={100}
